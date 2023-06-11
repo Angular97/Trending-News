@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="icons8-news-16.png" type="image/x-icon" />
+    <title>Trending News</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar bg-primary" style="background-color: #1880ca">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary navbar fixed-top navbar-light bg-light"
+        style="background-color: #1880ca"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand hover-link"
+            href="#"
+            id="navbar"
+            onclick="go_home_page()"
+            >Trending News</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="margin-right: 10px; font-weight: bold"
+                  id="sport"
+                  onclick="nav_click('sports')"
+                  >Sports</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="margin-right: 10px; font-weight: bold"
+                  onclick="nav_click('finance')"
+                  >Finance</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="margin-right: 10px; font-weight: bold"
+                  onclick="nav_click('politics')"
+                  >Politics</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="font-weight: bold"
+                  href="#"
+                  onclick="nav_click('tech')"
+                  >Tech</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                style="border: 2px solid rgb(15, 119, 255)"
+                id="searchbar"
+              />
+              <button class="btn btn-primary btn" type="submit" id="sbutton">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <main>
+      <div class="card-container" id="card-container"></div>
+    </main>
+    <template id="template-news-card">
+      <div class="card" style="width: 18rem">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            class="card-img-top"
+            alt="Image Not Found"
+            id="img-val"
+          />
+        </div>
+        <div class="card-body" style="padding: 12px">
+          <img
+            src="https://via.placeholder.com/32x32"
+            alt="Icon Not found"
+            style="
+              margin-bottom: 5px;
+              width: 32px;
+              display: inline;
+              margin-right: 5px;
+            "
+            id="news-image"
+          />
+          <h6 id="media-name" style="display: inline; margin-left: 2px">
+            News Heading
+          </h6>
+
+          <h4 id="news-title">This is Heading</h4>
+          <h6 class="news-source" id="news-source" style="margin-block: 12px">
+            End Date point
+          </h6>
+          <p id="news-desc">I am Description</p>
+        </div>
+      </div>
+    </template>
+
+    <button class="top_button" onclick="toppage()" id="topbutton">
+      Back to Top
+    </button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

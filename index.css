@@ -1,0 +1,64 @@
+#navbar {
+  margin-right: 350px;
+  font-style: italic;
+  font-weight: 700;
+}
+.hover-link {
+  cursor: pointer;
+}
+.hover-link:hover {
+  color: rgb(253, 42, 42);
+}
+
+.nav-link:hover {
+  color: rgb(35, 56, 245);
+}
+
+.card-container {
+  margin: 15px 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  align-items: start;
+}
+.card {
+  cursor: pointer;
+  margin-top: 65px;
+  margin-left: 10px;
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #d4ecff;
+  border-radius: 2px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.card-header img {
+  width: 254px;
+  height: 180px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: translateY(-2px);
+}
+
+.top_button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(253, 68, 68);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.top_button:hover {
+  background-color: rgb(255, 30, 30);
+}
