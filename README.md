@@ -26,7 +26,7 @@ This is Static news website which fetch live and trending news from API.A Trendi
 
  To start contributing, follow the below guidelines:
 
-**1.** Fork [this](https://imhardikdesai.github.io/news-website/) repository.
+**1.** Fork this repository.
 
 **2.** Clone your forked copy of the project.
 
