@@ -12,6 +12,9 @@
 This is Static news website which fetch live and trending news from API.A Trending News website which gives latest news about India and all Global . This website Build using Plain Venila Javascript , HTML , CSS , Bootstrap . The third party API is used as Microsoft News Bing API.
 
 </div>
+<h3 align="center">
+          Live Project : <a target="_blank" href="https://trending-newss.netlify.app/">Trending News</a>
+</h3>
 
 ## Tech Stack :  <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Bootstrap-7811f7?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
