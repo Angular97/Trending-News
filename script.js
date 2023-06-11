@@ -4,7 +4,7 @@ const url =
   "https://real-time-news-data.p.rapidapi.com/search?&country=IN&query=";
 const options = {
   headers: {
-    "X-RapidAPI-Key": "7fc8ffdacbmsh05e5c77d1273bdfp143a05jsnc1fb2c1a237a",
+    "X-RapidAPI-Key": "b08e26b710mshe1a85a7ddd4d99fp1688fbjsn31be08e83aec",
   },
 };
 window.addEventListener("load", () => fetchNews("IN"));
@@ -12,7 +12,7 @@ window.addEventListener("load", () => fetchNews("IN"));
 async function fetchNews(query) {
   const res = await fetch(`${url}${query}`, options);
   const result = await res.json();
-  console.log(result);
+  //console.log(result);
 
   datawrap(result.data);
 }
@@ -53,10 +53,12 @@ function fetchdata(card_clone, article) {
   //news_source.innerHTML = `${article.source_url}.  ${date}`;
 
   news_source.innerHTML = `${date}`;
-
-  const news_img = card_clone.querySelector("#news-image");
-  news_img.src = article.source_favicon_url;
-
+  try {
+    const news_img = card_clone.querySelector("#news-image");
+    news_img.src = article.source_favicon_url;
+  } catch {
+    news_img.src = "na";
+  }
   const media_name = card_clone.querySelector("#media-name");
   media_name.innerHTML = url_extract(media_name, article);
 
@@ -70,9 +72,8 @@ function url_extract(media_name, article) {
   const url_head = new URL(media_name);
   const domaininpart = url_head.hostname;
   const domain = domaininpart.split(".");
-  const val = "";
-  if (domain.length >= 2) val = domain.split[1];
-  else val = domain.split[0];
+  //console.log(domain);
+  const val = domain.length > 2 ? domain[1] : domain[0];
   return val;
 }
 
